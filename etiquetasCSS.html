@@ -19,9 +19,9 @@
     </header>
     <br>
     <a class="fcc-btn" href="index.html">Atrás</a>  
-    <h2>
+    <h1>
         Recursos para Desarrolladores
-    </h2>
+    </h1>
     <table>
         <thead>
             <tr>
@@ -56,14 +56,14 @@
         <img src="picker.jpg" width="500px" height="270px">
     </div> 
     <br>
-    <h2>
+    <h1>
          Colores CSS
-    </h2>
+    </h1>
     <table>
         <thead>
             <th>Elemento</th>
             <th>Descripción</th>
-            <th>Documentación</th>
+            <th>Sintaxis</th>
         </thead>
         <tbody>
             <tr>
@@ -122,14 +122,14 @@
     <div class="rgb">
         <img src="rgb.png" width="830px" height="550px">
     </div> 
-    <h2>
+    <h1>
         Selectores
-   </h2>
+   </h1>
     <table>
         <thead>
             <th>Elemento</th>
             <th>Descripción</th>
-            <th>Documentación</th>
+            <th>Sintaxis</th>
         </thead>
         <tbody>
             <tr>
@@ -155,19 +155,13 @@
                 <td><code>#foo{ declaraciones; }
                 </code></td>
             </tr>
-            <tr>
-            
-            </tr>
         </tbody>      
     </table>
     <br>
-    <h2>
-        Selectores de Atributo
-   </h2>
     <table>
         <thead>
-            <th>Sintaxis</th>
             <th>Descripción</th>
+            <th>Sintaxis</th>
         </thead>
         <tbody>
             <tr>
@@ -193,6 +187,145 @@
             <tr>
                 <td>Selecciona los elementos que tengan un atributo con el nombre attr. Uno de los valores del atributo contiene al menos una ocurrencia de  value</td>
                 <td>selector[attr *= value] { … } </td>
+            </tr>
+        </tbody>      
+    </table>
+
+    <table>
+        <thead>
+            <th>Elemento</th>
+            <th>Descripción</th>
+            <th>Sintaxis</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pseudo-Classes</td>
+                <td>Permite seleccionar elementos en base a su estado (:disabled), posicion de los elementos en el documento(:nth-child) e interacción del usuario(:hover)</td>
+                <td><code>selector:pseudo-class { … }
+                    button:hover{color: blue;}</code></td>
+            </tr>
+            <tr>
+                <td>Pseudo-Elementos</td>
+                <td>Seleccionan parte de un elemento en lugar del elemento mismo. Los pseudo-elementos se añaden a los selectores y permiten añadir estilos a una parte concreta de los elementos seleccionados</td>
+                <td><code>selector::pseudo-elemento { … }
+                    p::first-line{color: blue;} 
+                </code></td>
+            </tr>
+            <tr>
+                <td>Unión de Selectores</td>
+                <td>Selecciona la unión de los elementos seleccionados por cada selector de la lista</td>
+                    <td><code>Selector-1, Selector-2, … {   }
+                </code></td>
+            </tr>
+            <tr>
+                <td>Seleccionar Elementos Descendientes</td>
+                <td>Seleccionamos todos los elementos seleccionados por B que son descendientes de los elementos seleccionados por A</td>
+                <td><code>A B {}
+                </code></td>
+            </tr>
+            <tr>
+                <td>Seleccionar Elementos Hijos</td>
+                <td>Seleccionamos todos los elementos seleccionados por B que son hijos de los elementos seleccionados por  A</td>
+                <td><code>A>B{}
+                </code></td>
+            </tr>
+            <tr>
+                <td>Seleccionar Elementos Hermanos</td>
+                <td>Seleccionamos todos los elementos  seleccionados por B que son hermanos de los elementos seleccionados por A</td>
+                <td><code>A~B {}
+                </code></td>
+            </tr>
+            <tr>
+                <td>Seleccionar Elementos Hermanos Adyacentes</td>
+                <td>Seleccionamos todos los elementos  seleccionados por B que son hermanos y que están inmediatamente despues de los elementos seleccionados por A</td>
+                <td><code>A+B {}
+                </code></td>
+            </tr>
+        </tbody>      
+    </table>
+    <h1>Longitudes en CSS</h1>
+    <table>
+        <thead>
+            <th>Elemento</th>
+            <th>Descripción</th>
+            <th>Ejemplo</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pixel</td>
+                <td>Un píxel es la menor unidad homogénea en color que forma parte de una imagen digital</td>
+                <td>-20px</td>
+            </tr>
+        </tbody>      
+    </table>
+    <h2>Unidades Absolutas</h2>
+    <table>
+        <thead>
+            <th>Unidad</th>
+            <th>Nombre</th>
+            <th>Equivalente a</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>px</td>
+                <td>Pixel</td>
+                <td>0.265</td>
+            </tr>
+        </tbody>      
+    </table>
+    <h2>Unidades Relativas</h2>
+    <table>
+        <thead>
+            <th>Unidad</th>
+            <th>Relativo a</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>rem</td>
+                <td>Relativo al tamaño de la letra del elemento root (El elemento html)</td>
+            </tr>
+            <tr>
+                <td>%</td>
+                <td>Relativo a otro valor. Si establecemos el valor de la propiedad font-size, será un porcentaje del font-size del elemento padre.
+                    Si usamos un porcentaje para establecer el valor del elemento width, será un porcentaje del width del elemento padre.  </td>
+            </tr>
+            <tr>
+                <td>vw</td>
+                <td>Relativo al ancho del viewport</td>
+            </tr>
+            <tr>
+                <td>vh</td>
+                <td>Relativo al alto del viewport</td>
+            </tr>
+        </tbody>      
+    </table>
+    <h1>Modelo de Cajas</h1>
+    <table>
+        <thead>
+            <th>Area</th>
+            <th>Descripción</th>
+            <th>Propiedades</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Contenido</td>
+                <td>Es el área donde se encuentra el contenido del elemento(texto, imagen, etc)</td>
+                <td>width,min-width,max-width,height,min-height,max-height</td>
+            </tr>
+            <tr>
+                <td>Relleno</td>
+                <td>Es el área de relleno del elemento</td>
+                <td>padding-top,padding-right,padding-bottom,padding-left</td>
+            </tr>
+            <tr>
+                <td>Borde</td>
+                <td>Es el borde del elemento</td>
+                <td>border-width,border-style,border-color</td>
+            </tr>
+            <tr>
+                <td>Margen</td>
+                <td>Es el margen del elemento. Se usa para separar el elemento de sus vecinos</td>
+                <td>margin-top,margin-right,margin-bottom,margin-left</td>
             </tr>
         </tbody>      
     </table>

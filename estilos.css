@@ -1,6 +1,7 @@
 body{
     background-color: #072b55;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 20px;
 }
 
 #main-container{
@@ -10,11 +11,12 @@ body{
 
 h1{ 
     color:antiquewhite;
+    margin: 40px;
 }
 
 h2{
     margin: 40px;
-    color: antiquewhite;
+    color: rgba(218, 183, 70, 0.788);
 }
 
 table{
@@ -109,9 +111,36 @@ div{
 .picker{
     position:absolute;
     left: 1000px;
-    top: 375px;
+    top: 400px;
 }
 
 .rgb{
     margin-left: 480px;
+}
+
+.Titulo{
+    color:antiquewhite;
+    margin: 40px;
+}
+
+div{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:large;
+}
+
+.bttHTML{
+    background-color: darkcyan;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border: 5px solid darkslategray;
+    margin-top: 100px;
+}
+
+.bttCSS{
+    background-color: darkcyan;
+    color: white;
+    padding: 5px 25px;
+    text-decoration: none;
+    border: 5px solid darkslategray;
 }
