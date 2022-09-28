@@ -1,5 +1,5 @@
 body{
-    background-color: #072b55;
+    background-color: #06283D;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 20px;
 }
@@ -10,17 +10,17 @@ body{
 }
 
 h1{ 
-    color:antiquewhite;
-    margin: 40px;
+    color:white;
+    text-align: center;
 }
 
 h2{
-    margin: 40px;
-    color: rgba(218, 183, 70, 0.788);
+    text-align: center;
+    color: white;
 }
 
 table{
-    background-color: antiquewhite;
+    background-color: #DFF6FF;
     text-align: left;
     width: 95%;
     margin: auto;
@@ -32,7 +32,7 @@ th,td{
 }
 
 thead{
-    background-color:darkcyan;
+    background-color:#256D85;
     border-bottom: solid 0px;
     color: white;
 }
@@ -42,14 +42,14 @@ tr:nth-child(even){
 }
 
 tr:hover td{
-    background-color:darkolivegreen;
+    background-color:#47B5FF;
     color:white;
 }
 
 header{
     display: flex;
     height: 60px;
-    background-color:darkslategray;
+    background-color:#256D85;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
@@ -86,7 +86,7 @@ header{
 }
 
 div{
-    color: antiquewhite;
+    color: #DFF6FF;
 }
 
 .fcc-btn {
@@ -99,12 +99,12 @@ div{
 }
 
 .fcc-btn:hover{
-    background-color:darkolivegreen;
+    background-color:#47B5FF;
     color:white;
 }
 
 .Titulo{
-    color:antiquewhite;
+    color:#DFF6FF;
     margin: 40px;
 }
 
@@ -113,19 +113,11 @@ div{
     font-size:large;
 }
 
-.bttHTML{
-    background-color: darkcyan;
-    color: white;
-    padding: 10px 25px;
-    text-decoration: none;
-    border: 5px solid darkslategray;
-    margin-top: 100px;
+.rgb{
+    width: 100%;
+    border-radius: 15px;
 }
 
-.bttCSS{
-    background-color: darkcyan;
-    color: white;
-    padding: 5px 25px;
-    text-decoration: none;
-    border: 5px solid darkslategray;
+address{
+    color: #DFF6FF;
 }
